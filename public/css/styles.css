@@ -1,0 +1,60 @@
+main{
+    background-color: rgb(134, 157, 208);
+}
+.nav-link{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.navbar-collapse{
+    background-color: #3961b8;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo{
+    border: solid black 2px;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 90px;
+    width: 90px;
+}
+.outerDiv{
+    display: flex;
+    background-color: yellow;
+    margin: 10px;
+}
+.outerHeadings{
+    margin-left: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.homePromoDiv{
+    margin: 10px;
+    background-color: red;
+    width: 75%;
+    height: 500px;
+}
+.promoImg{
+    margin: 10px;
+}
+.promoProd{
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.product{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.promoPrice{
+    font-size: 140px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.carouselPromo{
+    width: 500px;
+}
