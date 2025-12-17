@@ -1,15 +1,23 @@
 main{
-    background-color: rgb(134, 157, 208);
+    background-color: rgb(79, 146, 239);
+    border-radius: 10px;
+    margin: 5px;
 }
+
 .nav-link{
     margin-left: 100px;
     margin-top: 50px;
 }
 .navbar-collapse{
-    background-color: #3961b8;
+    background-color: white;
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.container-fluid{
+    background-color: white;
+}
+
+
 .logo{
     border: solid black 2px;
     margin-left: 10px;
@@ -17,44 +25,30 @@ main{
     height: 90px;
     width: 90px;
 }
-.outerDiv{
-    display: flex;
-    background-color: yellow;
-    margin: 10px;
-}
+
 .outerHeadings{
     margin-left: 10px;
-    font-size: 32px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 10px;
+    font-size: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 1px black;
     text-align: center;
+    color: rgb(255, 243, 5);
 }
-.homePromoDiv{
-    margin: 10px;
-    background-color: red;
-    width: 75%;
-    height: 500px;
-}
-.promoImg{
-    margin: 10px;
-}
-.promoProd{
-    border: 3px solid darkblue;
-    border-radius: 10px;
-    flex-wrap: wrap;
-}
-.product{
-    margin-left: 10px;
-    margin-top: 20px;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-.promoPrice{
-    font-size: 140px;
-    margin-top: 30px;
+.card{
     margin-left: 20px;
+}
+.outerCardDiv{
+    display: flex;
+    gap: 20px;
+}
+.card-img-top{
+    height: 400px;
 }
 .carouselPromo{
     width: 500px;
+    display:inline-flex;
+
 }
+
