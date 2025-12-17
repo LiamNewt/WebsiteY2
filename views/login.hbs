@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Login">
+  <meta name="author" content="ATU Sligo">
+  <title>Login</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <main>
+    <div class="loginCard">    
+        <div class="col-sm col-md-4"> 
+            <div role="alert" id="loginerror" style="color: white; margin-left:20px;">The username or password you entered is incorrect.<br><a href="" style="color: red">Forgot your password?</a></div>    
+            <form name="login" id="user-login"  method="get">
+                <div class="form-group">
+                    <label for="emailAddressID">Email address</label>
+                    <input type="email" class="form-control" id="emailAddressID" name="email" value="wmitty@email.com" required>
+                </div>
+                <div >
+                    <label for="passwordID">Password</label> 
+                    <input type="password" class="form-control" id="passwordID" name="password" value="password1" required>
+                </div>    
+                <div>
+                    <input type='submit' class="btn btn-primary" style="margin-top: 20px;" value="Login">
+                </div>
+            </form>
+            <p> <a href="/register" style="margin-left: 20px; color:red;">Need to Register?</a></p>
+
+        </div> 
+    </div>   
+    </main>
+        <script src="/js/login.js"></script>
+        <script src="/js/custom.js"></script>
+</body>

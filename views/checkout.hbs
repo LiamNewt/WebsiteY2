@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Checkout">
+  <meta name="author" content="ATU Sligo">
+  <title>Checkout</title>
+ </head>
+<body>
+<main>
+    
+    <h1 style="margin-left: 20px; margin-top:20px; color:white;">Checkout</h1>
+    <div>    
+        <div> 
+          <form name="checkout" id="user-checkout" action="" method="get">
+            <div class="detailsCard">
+                <fieldset>
+                    <legend style="margin-left: 10px;">Delivery Details</legend>
+                   
+                        <label for="getFirstName" style="margin-left: 10px; margin-top:10px;">First name</label>
+                        <input type="text"  id="getFirstName" name="firstname" value="firstname" required>
+                 <br>
+                        <label for="getLastName" style="margin-left: 10px; margin-top:10px;">Last name</label> 
+                        <input type="text" c id="getLastName" name="lastname" value="surname" required>
+                <br>
+                        <label for="getAddress1" style="margin-left: 10px; margin-top:10px;">Address</label> 
+                        <input type="text"  id="getAddress1" name="address2" value="address 1" required>
+                
+                        <label for="getAddress2" style="margin-left: 10px; margin-top:10px;">Addresss</label> 
+                        <input type="text" id="getAddress2" name="address2"  value="address 2"  required>
+                  
+                        <label for="getAddress3" style="margin:10px">Addresss</label> 
+                        <input type="text"  id="getAddress3" name="address3"  value="address 3"  required>
+                </div>
+              <div class="paymentCard">
+                <fieldset>
+                    <legend style="margin-left: 10px; margin-top:10px;">Payment Details</legend>
+
+                        <label for="getCardName" style="margin-left: 10px; margin-top:10px;">Card Name</label> 
+                        <input type="text" id="cardName" name="cardname" value="MR FIRSTNAME SURNAME" required>
+             
+                        <label for="getCardNumber" style="margin-left: 10px; margin-top:10px;">Card Number</label> 
+                        <input type="text" id="cardNumber" name="cardNumber" value="1234 5678 9102 3456" required>
+                   
+                        <label for="getCardCVC" style="margin-left: 10px; margin-top:10px;">CVC</label> 
+                        <input type="password" id="cardCvv" name="cardCvv"  required>
+                </fieldset>    
+                <div id="payment-success" role="alert" style="display: none;">
+                    Thank you for your purchase. You will receive delivery details via email. Please return to our <a href="/shop">Shopping Page</a>.
+                </div>
+                <div  id="payment-failure" role="alert" style="display: none;">
+                  There seems to be a problem with the card details you entered.
+                </div>                
+                <div>
+                    <input type='submit' style="margin:10px;" class="btn btn-primary" id="buy-now" name="buy-now" value="Buy Now">
+                </div>
+            </form>
+        </div>
+
+        </div> 
+    </div>   
+    
+
+    
+</main>
+<script src="custom.js"></script> 
+<script src="checkout.js"></script> 
+
+</body>
+</html>
+
+
+

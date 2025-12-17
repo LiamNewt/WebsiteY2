@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Form values returned</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">    
+</head>
+<body>
+    <main class="container">
+        <h1 id="Heading">Thank you for contacting TechShop.</h1>
+        <h2></h2>
+        <div class="card">
+<div class="card-body">
+    <h5 class="card-title">Your Contact Submission:</h5>
+    <p class="card-text"><strong>Name:</strong> <span id="userName"></span></p>
+    <p class="card-text"><strong>Email:</strong> <span id="userEmail"></span></p>
+    <p class="card-text"><strong>Message:</strong> <span id="userComment"></span></p>
+  </div>
+</div>
+        <a href="/" class="btn btn-secondary" style="margin-top: 10px; margin-bottom:10px;">Return to Home</a>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37274.35492758497!2d-8.478318184472247!3d54.27481880126069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee9b5677caee9%3A0xa00c7a997317380!2sSligo!5e0!3m2!1sen!2sie!4v1742921395212!5m2!1sen!2sie" width="1500" height="450" style="border:0;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+    // Display values
+    document.getElementById('userName').textContent = params.get('userName');
+    document.getElementById('userEmail').textContent = params.get('userEmail');
+    document.getElementById('userComment').textContent = params.get('userComment');
+    </script>
+<script src="js/jquery-min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>    
+<script>
+// javascript code will only run once the DOM is ready   
+$(document).ready(function(){
+
+    var formValues = JSON.parse(localStorage.getItem('regForm'));
+    for(var i=0;i<formValues.length;i++){
+           // display the name/value pairs on screen    
+           alert('Field name is : ' + formValues[i]['name'] + ', Value is: ' + formValues[i]['value']);
+        }
+});
+</script>     
+</body>
+</html>

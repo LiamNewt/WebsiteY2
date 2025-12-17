@@ -64,9 +64,29 @@ app.get('/about', (req, res) => {
     console.log('about')
   });
 
+  //login page
+app.get('/login', (req, res) => {
+    state={login : true}
+    head={title:"Login"}
+    res.render('login', { state, head});
+    console.log('login')
+  });
+
+app.get('/checkout', (req, res) => {
+    state={checkout : true}
+    head={title:"Checkout"}
+    res.render('checkout', { state, head});
+    console.log('checkout')
+  });
+
 app.get('/submission', (req, res) => {
   formDetails= { userName, userEmail, userComment } = req.query;
   res.render('submission', {state, formDetails});
+});
+
+app.get('/register', (req, res) => {
+  formDetails= { userName, userEmail, userComment } = req.query;
+  res.render('register', {state, formDetails});
 });
 
 
