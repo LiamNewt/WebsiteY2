@@ -62,7 +62,6 @@ footer{
 .carouselPromo{
     width: 500px;
     display:inline-flex;
-
 }
 #Heading{
     font-size: 50px;
@@ -132,6 +131,8 @@ footer{
     text-align: center;
     margin-top: 30px;
     margin-left: 150px;
+    border: 2px solid black;
+
 }
 .login{
     color: black;
@@ -146,11 +147,59 @@ footer{
     color: white;
     margin-left: 20px;
 }
-.paymentCard, .detailsCard{
+.paymentCard, .detailsCard, .cartCard{
     background-color: white;
     color: black;
     font-size: 20px;
     margin: 20px;
     border-radius: 10px;
     border: solid black 2px;
+}
+.cartBtn{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    height: 40px;
+    width: 80px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    border: 2px solid black;
+
+}
+.cart{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.checkoutBtn{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    height: 40px;
+    width: 90px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    border: 2px solid black;
+}
+.checkout{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+.aboutCard{
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: linear-gradient(#000080, #0057B8, #4169E1, #87CEEB, #E0FFFF);
+
 }

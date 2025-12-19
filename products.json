@@ -1,7 +1,44 @@
 [
-    {
-        "title": "Product1",
-        "price": "€400",
-        "desc": "Description"
-    }
-]
+        {
+            "id": "product1",
+            "title": "Tech Laptop 16GB",
+            "price": 939.99,
+            "desc": "16\" display, 16GB RAM, Core i9.",
+            "image": "/images/freepik__minimal-soft-studio-light-photography-create-a-pro__27002.jpeg"
+        },
+        {
+            "id": "product2",
+            "title": "24\" Gaming Monitor",
+            "price": 649.99,
+            "desc": "Stunning 24\" gaming monitor for immersive play.",
+            "image": "/images/Screenshot 2025-12-17 144853.png"
+        },
+        {
+            "id": "product3",
+            "title": "Office Keyboard",
+            "price": 149.99,
+            "desc": "Durable, comfortable keyboard built for productivity.",
+            "image": "/images/freepik__minimal-soft-studio-light-photography-create-a-pro__54681.jpeg"
+        },
+        {
+            "id": "product4",
+            "title": "27\" 4k OLED Gaming Monitor",
+            "price": 849.99,
+            "desc": "27\" 4k OLED for stunning visuals.",
+            "image": "/images/freepik__minimal-soft-studio-light-photography-create-a-pro__27004.jpeg"
+        },
+        {
+            "id": "product5",
+            "title": "Tech Gaming Headset",
+            "price": 179.99,
+            "desc": "High-fidelity headset built for gamers.",
+            "image": "/images/freepik__design-editorial-soft-studio-light-photography-hig__27000.jpeg"
+        },
+        {
+            "id": "product6",
+            "title": "Bluetooth EarPods",
+            "price": 249.99,
+            "desc": "Wireless earPods with excellent audio quality.",
+            "image": "/images/freepik__minimal-soft-studio-light-photography-modern-earph__27001.jpeg"
+        }
+    ]

@@ -41,10 +41,11 @@ app.get('/', (req, res) => {
 });
 
   // shop route
+  const products = require('./products.json');
   app.get('/shop', (req, res) => {
     state = { shop: true };
     head = { title: 'Shop' };
-    res.render('shop', { state, head });
+    res.render('shop', { state, head, products });
     console.log('shop');
   });
 
@@ -77,6 +78,14 @@ app.get('/checkout', (req, res) => {
     head={title:"Checkout"}
     res.render('checkout', { state, head});
     console.log('checkout')
+  });
+
+  // cart page
+app.get('/cart', (req, res) => {
+    state = { cart: true };
+    head = { title: 'Cart' };
+    res.render('cart', { state, head });
+    console.log('cart');
   });
 
 app.get('/submission', (req, res) => {
