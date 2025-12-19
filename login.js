@@ -3,7 +3,7 @@ document.getElementById('user-login').addEventListener('submit', (event) => {
 
     var email = document.getElementById('emailAddressID').value;
     var password= document.getElementById('passwordID').value;
-    if (email=="wmitty@email.com" && password=="password1")  {   
+    if (email=="example@email.com" && password=="password1")  {   
         // successful login, user redirected to shop.html
         localStorage.setItem('loggedIn',1);    
         window.location.href = "/shop";  // redirect to shop page
